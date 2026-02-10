@@ -22,7 +22,8 @@ Simply open `index.html` in your web browser!
 Or serve it with Python:
 
 ```
-python3 -m http.server 8000
+python3 server.py
 ```
 
-Then go to `http://localhost:8000`.
+Then go to `http://localhost:8000/YourName`.
+Example: `http://localhost:8000/Doreen` or `http://localhost:8000/Sarah`

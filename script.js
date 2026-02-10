@@ -5,6 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const successContent = document.getElementById("success-content");
   const background = document.querySelector(".background-hearts");
 
+  // Dynamic Name Logic
+  const path = window.location.pathname;
+  const name = decodeURIComponent(path.substring(1)); // Remove leading slash
+  if (name && name !== "index.html" && name !== "/") {
+    const titleElement = document.querySelector(".title");
+    titleElement.textContent = name + "...";
+  }
+
   // Create background hearts
   function createHearts() {
     setInterval(() => {
